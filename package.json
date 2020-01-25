@@ -1,7 +1,7 @@
 {
   "name": "semantic-release-commit-filter",
   "version": "1.0.0",
-  "description": "plugin that filters git commits based on the current working directory",
+  "description": "semantic-release plugin that filters git commits based on the current working directory",
   "main": "lib/index.js",
   "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
   "license": "MIT",
@@ -15,9 +15,11 @@
     "lib"
   ],
   "scripts": {
-    "prebuild": "yarn clean && yarn lint",
+    "prebuild": "yarn clean && yarn lint && yarn test",
     "build": "npx tsc -p tsconfig.build.json",
     "clean": "npx rimraf lib coverage *.log build 0x",
+    "test": "npx jest",
+    "test:cov": "npx jest --coverage --coverageProvider v8",
     "lint": "npx eslint src/*.ts --cache",
     "lint:fix": "yarn lint:eslint --fix",
     "prepublishOnly": "yarn build"
@@ -30,6 +32,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "24.9.1",
     "@types/node": "13.5.0",
     "@typescript-eslint/eslint-plugin": "2.17.0",
     "@typescript-eslint/parser": "2.17.0",
@@ -44,8 +47,10 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-unicorn": "15.0.1",
     "husky": "4.2.1",
+    "jest": "^25.1.0",
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
+    "ts-jest": "25.0.0",
     "ts-node": "8.6.2",
     "tslib": "1.10.0",
     "typescript": "3.7.5"
