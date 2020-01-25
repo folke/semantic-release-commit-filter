@@ -4,6 +4,11 @@
   "description": "semantic-release plugin that filters git commits based on the current working directory",
   "main": "lib/index.js",
   "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
+  "homepage": "https://github.com/folke/semantic-release-commit-filter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/folke/semantic-release-commit-filter.git"
+  },
   "license": "MIT",
   "private": false,
   "keywords": [
