@@ -1,8 +1,8 @@
 {
-  "name": "semantic-release-git-filter",
+  "name": "semantic-release-commit-filter",
   "version": "1.0.0",
-  "description": "plugin that filters git commits based on the path",
-  "main": "index.js",
+  "description": "plugin that filters git commits based on the current working directory",
+  "main": "lib/index.js",
   "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -15,13 +15,12 @@
     "lib"
   ],
   "scripts": {
-    "prebuild": "yarn clean && yarn lint && yarn test",
+    "prebuild": "yarn clean && yarn lint",
     "build": "npx tsc -p tsconfig.build.json",
     "clean": "npx rimraf lib coverage *.log build 0x",
-    "test": "npx jest",
-    "test:cov": "npx jest --coverage --coverageProvider v8",
-    "lint": "npx eslint src/*.ts __tests__/*.ts --cache",
-    "lint:fix": "yarn lint:eslint --fix"
+    "lint": "npx eslint src/*.ts --cache",
+    "lint:fix": "yarn lint:eslint --fix",
+    "prepublishOnly": "yarn build"
   },
   "ultra": {
     "concurrent": [
@@ -29,15 +28,11 @@
       "prebuild"
     ]
   },
+  "dependencies": {},
   "devDependencies": {
-    "@types/chai": "4.2.7",
-    "@types/jest": "24.9.1",
     "@types/node": "13.5.0",
-    "@types/sinon": "7.5.1",
-    "@types/sinon-chai": "3.2.3",
     "@typescript-eslint/eslint-plugin": "2.17.0",
     "@typescript-eslint/parser": "2.17.0",
-    "chai": "4.2.0",
     "devmoji": "2.1.1",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.9.0",
@@ -49,12 +44,8 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-unicorn": "15.0.1",
     "husky": "4.2.1",
-    "jest": "25.1.0",
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
-    "sinon": "8.1.1",
-    "sinon-chai": "3.4.0",
-    "ts-jest": "25.0.0",
     "ts-node": "8.6.2",
     "tslib": "1.10.0",
     "typescript": "3.7.5"
