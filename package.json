@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-commit-filter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "semantic-release plugin that filters git commits based on the current working directory",
   "main": "lib/index.js",
   "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
