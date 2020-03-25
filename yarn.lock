@@ -975,10 +975,10 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.0.tgz#545983a0603fe425bc672d66c9e3c89c42121a83"
-  integrity sha512-NIQrwvv9V39FHgGFm36+U9SMQzbiHvU79k+iADraJTpmrFFfx7Ds0IvDoAdZsDrknlkRk14OYoWXb57uTh7/sw==
+commander@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-5.0.0.tgz#dbf1909b49e5044f8fdaf0adc809f0c0722bdfd0"
+  integrity sha512-JrDGPAKjMGSP1G0DUoaceEJ3DZgAfr/q6X7FVk4+U5KxUSKviYGM2k6zWkfyyBHy5rAtzgYJFa1ro2O9PtoxwQ==
 
 compare-versions@^3.5.1:
   version "3.5.1"
@@ -1149,14 +1149,14 @@ detect-newline@^3.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
-devmoji@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/devmoji/-/devmoji-2.1.1.tgz#ea9997d69ffaad1241fcfdbe5fc54b9bb51b1f03"
-  integrity sha512-VZXJT5HRyIRU8SIpYMUF0Gm1d0EcoB3movXaABSo12MIxU6gwVHECH9qQsKIeur/5hrC1TVZqrQmgLJD1j4UUQ==
+devmoji@2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/devmoji/-/devmoji-2.1.7.tgz#9f058a958b5c2f3f598b3d9f95fdebf6fa48bed7"
+  integrity sha512-YggS/WHtrlcnfWDEtpcXyLYCret2hCXdtQjzG6Zdys81eYpMtxKkZAILb8IhwWUX9kfOVgzIhg/c/CeOMzW+8A==
   dependencies:
     chalk "^3.0.0"
-    commander "^4.1.0"
-    ts-interface-checker "^0.1.10"
+    commander "5.0.0"
+    ts-interface-checker "0.1.10"
 
 diff-sequences@^24.9.0:
   version "24.9.0"
@@ -4201,7 +4201,7 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-ts-interface-checker@^0.1.10:
+ts-interface-checker@0.1.10:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.10.tgz#b68a49e37e90a05797e590f08494dd528bf383cf"
   integrity sha512-UJYuKET7ez7ry0CnvfY6fPIUIZDw+UI3qvTUQeS2MyI4TgEeWAUBqy185LeaHcdJ9zG2dgFpPJU/AecXU0Afug==
