@@ -17,6 +17,6 @@ Object.keys(require.cache)
     }
   })
 
-export const tagFormat = `${
+export const tagFormat = `pkg/${
   require(posix.resolve(process.cwd(), "package.json")).name
-}-v\${version}`
+}/v\${version}`
