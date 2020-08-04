@@ -8,6 +8,7 @@
     "module": "CommonJS", // Should be CommonJS for NodeJS apps
     "strict": true,
     "target": "ES2016", // any node version after 2016 is supported
+    "lib": ["ES2020"],
     "moduleResolution": "node", // should be node
     "resolveJsonModule": true,
     "esModuleInterop": true,

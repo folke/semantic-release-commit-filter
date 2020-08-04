@@ -31,8 +31,8 @@
     "test": "npx jest",
     "test:cov": "npx jest --coverage --coverageProvider v8",
     "lint": "npx eslint src/*.ts --cache",
-    "lint:fix": "yarn lint:eslint --fix",
-    "prepublishOnly": "yarn build"
+    "lint:fix": "npx yarn lint:eslint --fix",
+    "prepare": "npx yarn build"
   },
   "ultra": {
     "concurrent": [
