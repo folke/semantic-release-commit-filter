@@ -931,6 +931,14 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chalk@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
+  integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
 chardet@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
@@ -1028,10 +1036,10 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-5.0.0.tgz#dbf1909b49e5044f8fdaf0adc809f0c0722bdfd0"
-  integrity sha512-JrDGPAKjMGSP1G0DUoaceEJ3DZgAfr/q6X7FVk4+U5KxUSKviYGM2k6zWkfyyBHy5rAtzgYJFa1ro2O9PtoxwQ==
+commander@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.0.tgz#b990bfb8ac030aedc6d11bc04d1488ffef56db75"
+  integrity sha512-zP4jEKbe8SHzKJYQmq8Y9gYjtO/POJLgIdKgV7B9qNmABVFVc+ctqSX6iXh4mCpJfRBOabiZ2YKPg8ciDw6C+Q==
 
 compare-versions@^3.5.1:
   version "3.6.0"
@@ -1202,14 +1210,14 @@ detect-newline@^3.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
-devmoji@2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/devmoji/-/devmoji-2.1.7.tgz#9f058a958b5c2f3f598b3d9f95fdebf6fa48bed7"
-  integrity sha512-YggS/WHtrlcnfWDEtpcXyLYCret2hCXdtQjzG6Zdys81eYpMtxKkZAILb8IhwWUX9kfOVgzIhg/c/CeOMzW+8A==
+devmoji@2.1.13:
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/devmoji/-/devmoji-2.1.13.tgz#b6cb7a6a25b80c1c328ffd734e75416d349be1d5"
+  integrity sha512-CyToAgcVawtaDtQp906noln4Gl+IFWq9Bs95ht4o9LeYc5oVfOg/2KEE3sKYZHP74h7/PNrE465z7bSjIHRHyw==
   dependencies:
-    chalk "^3.0.0"
-    commander "5.0.0"
-    ts-interface-checker "0.1.10"
+    chalk "^4.1.0"
+    commander "6.2.0"
+    ts-interface-checker "0.1.13"
 
 diff-sequences@^24.9.0:
   version "24.9.0"
@@ -4235,10 +4243,10 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-ts-interface-checker@0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.10.tgz#b68a49e37e90a05797e590f08494dd528bf383cf"
-  integrity sha512-UJYuKET7ez7ry0CnvfY6fPIUIZDw+UI3qvTUQeS2MyI4TgEeWAUBqy185LeaHcdJ9zG2dgFpPJU/AecXU0Afug==
+ts-interface-checker@0.1.13:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
+  integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
 ts-jest@25.2.1:
   version "25.2.1"
