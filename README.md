@@ -31,12 +31,12 @@ Now we can run `semantic-release` in any of the package directories and/or in th
 
 ## :package: Installation
 
-Make sure that if you have `semantic-version` installed globally, also install `semantic-version-commit-filter` globally. Same with local install.
+Make sure that if you have `semantic-release` installed globally, also install `semantic-release-commit-filter` globally. Same with local install.
 
 ```console
-$ npm install --dev semantic-version-commit-filter
+$ npm install --dev semantic-release-commit-filter
 
-$ yarn install --dev semantic-version-commit-filter
+$ yarn install --dev semantic-release-commit-filter
 ```
 
 > **!!** make sure you make `semantic-release` available in every `package.json` file. Additionally, every package directory needs its own semantic release configuration file.
