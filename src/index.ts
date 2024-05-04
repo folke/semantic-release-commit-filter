@@ -16,7 +16,3 @@ Object.keys(require.cache)
       return parse(config, options)
     }
   })
-
-export const tagFormat = `${
-  require(posix.resolve(process.cwd(), "package.json")).name
-}-v\${version}`
