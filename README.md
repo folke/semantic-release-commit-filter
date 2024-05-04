@@ -54,5 +54,5 @@ You can either specify this packages in your [release config file](https://githu
 or specify it as a paramater to the `semantic-release` cli
 
 ```shell
-$ npx semantic-release -e semantic-release-commit-filter
+$ npx semantic-release -e semantic-release-commit-filter -t 'FOLDER_NAME/${version}'
 ```
