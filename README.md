@@ -2,7 +2,6 @@
 
 This package is a [shareable configuration](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/shareable-configurations.md) for [semantic-release](https://github.com/semantic-release/semantic-release) that:
 
-- configures `tagFormat` to use the package name from the current directory `${package.name}-v${version}`
 - uses `commits` only applicable to the current directory
 
 ## :question: Why
@@ -34,9 +33,9 @@ Now we can run `semantic-release` in any of the package directories and/or in th
 Make sure that if you have `semantic-version` installed globally, also install `semantic-version-commit-filter` globally. Same with local install.
 
 ```console
-$ npm install --dev semantic-version-commit-filter
+$ npm install --dev semantic-release-commit-filter
 
-$ yarn install --dev semantic-version-commit-filter
+$ yarn install --dev semantic-release-commit-filter
 ```
 
 > **!!** make sure you make `semantic-release` available in every `package.json` file. Additionally, every package directory needs its own semantic release configuration file.
@@ -47,6 +46,7 @@ You can either specify this packages in your [release config file](https://githu
 
 ```json
 {
+  "tagFormat": "FOLDER_NAME/${version}",
   "extends": ["semantic-release-commit-filter"]
 }
 ```
@@ -54,5 +54,5 @@ You can either specify this packages in your [release config file](https://githu
 or specify it as a paramater to the `semantic-release` cli
 
 ```shell
-$ npx semantic-release -e semantic-release-commit-filter
+$ npx semantic-release -e semantic-release-commit-filter -t 'FOLDER_NAME/${version}'
 ```
